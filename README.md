@@ -3,16 +3,20 @@
 #### 1.  Go to the Anaconda downloads page https://www.anaconda.com/downloads and get the Python 3.6 version.
 Then run Anaconda
 Update your base Anaconda packages
-conda update conda
+``` conda update conda
 conda update anaconda
 conda update python
 conda update --all
+```
 
 #### 2. Create a Python "virtual environment"
+```
 conda create --name dinhson
+```
 
 #### 3. Install protobu
 Root: /data/dinhson/
+```
 sudo apt-get install autoconf automake libtool curl make g++ unzip -y
 git clone https://github.com/google/protobuf.git
 cd protobuf
@@ -23,13 +27,15 @@ make
 make check
 sudo make install
 sudo ldconfig
-
+```
 #### 4. Install CMake GUI
+```
 sudo apt purge cmake-qt-gui
 sudo apt-get install qtbase5-dev
+```
 
 Download CMake from the website , unzip it and go inside that folder. 
-
+```
 wget https://github.com/Kitware/CMake/releases/download/v3.17.2/cmake-3.17.2.tar.gz
 tar -xvzf cmake-3.17.2.tar.gz
 
@@ -37,9 +43,10 @@ cd cmake-3.17.2
 ./bootstrap
 make -j4
 make install
+```
 #### 5. Install Openpose, Caffe
 Root: /dinhson/
-
+```
 git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
 cd openpose
@@ -56,13 +63,15 @@ make -j`nproc`
 
 cd python
 make -j4
-
+```
 Then, demo: https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/quick_start.md#quick-start
 
 #### 6. Combined to Python
+```
 /dinhson/openpose/build/python/openpose$ pwd
 >>> /dinhson/openpose/build/python/openpose
 
+```
 
 <p align="center">
     <img src="doc/ezgif.com-video-to-gif.gif", width="480">
