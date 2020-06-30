@@ -1,17 +1,17 @@
 ### How to install Openpose on Ubuntu
 
-1.  Go to the Anaconda downloads page https://www.anaconda.com/downloads and get the Python 3.6 version.
+#### 1.  Go to the Anaconda downloads page https://www.anaconda.com/downloads and get the Python 3.6 version.
 Then run Anaconda
-- Update your base Anaconda packages
+Update your base Anaconda packages
 conda update conda
 conda update anaconda
 conda update python
 conda update --all
 
-2. Create a Python "virtual environment"
+#### 2. Create a Python "virtual environment"
 conda create --name dinhson
 
-3. Install protobu
+#### 3. Install protobu
 Root: /data/dinhson/
 sudo apt-get install autoconf automake libtool curl make g++ unzip -y
 git clone https://github.com/google/protobuf.git
@@ -24,7 +24,7 @@ make check
 sudo make install
 sudo ldconfig
 
-4. Install CMake GUI
+#### 4. Install CMake GUI
 sudo apt purge cmake-qt-gui
 sudo apt-get install qtbase5-dev
 
@@ -37,7 +37,7 @@ cd cmake-3.17.2
 ./bootstrap
 make -j4
 make install
-5. Install Openpose, Caffe
+#### 5. Install Openpose, Caffe
 Root: /dinhson/
 
 git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose
@@ -59,7 +59,7 @@ make -j4
 
 Then, demo: https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/quick_start.md#quick-start
 
-6. Combined to Python
+#### 6. Combined to Python
 /dinhson/openpose/build/python/openpose$ pwd
 >>> /dinhson/openpose/build/python/openpose
 
