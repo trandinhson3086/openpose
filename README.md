@@ -1,4 +1,10 @@
-### How to install Openpose on Ubuntu
+<p align="center">
+    <img src="doc/ezgif.com-video-to-gif.gif", width="480">
+    <br>
+    <sup>Authors <a Demo</a></sup>
+</p>
+
+## How to install Openpose on Ubuntu
 
 #### 1.  Go to the Anaconda downloads page https://www.anaconda.com/downloads and get the Python 3.6 version.
 Then run Anaconda
@@ -73,11 +79,7 @@ Then, demo: https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master
 
 ```
 
-<p align="center">
-    <img src="doc/ezgif.com-video-to-gif.gif", width="480">
-    <br>
-    <sup>Authors <a Demo</a></sup>
-</p>
+
 
 
 
