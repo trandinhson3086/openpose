@@ -72,12 +72,6 @@ make -j4
 ```
 Then, demo: https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/quick_start.md#quick-start
 
-#### 6. Combined to Python
-```
-/dinhson/openpose/build/python/openpose$ pwd
->>> /dinhson/openpose/build/python/openpose
-
-```
 
 
 
